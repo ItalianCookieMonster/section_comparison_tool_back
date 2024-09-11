@@ -37,18 +37,6 @@ class SectionViewSet(ModelViewSet):
         return {'request': self.request}
 
 
-# class SectionList(ListCreateAPIView):
-#     queryset = Section.objects.all()
-#     serializer_class = SectionSerializer
-    
-#     def get_serializer_context(self):
-#         return {'request': self.request}
-
-
-# class SectionDetail(RetrieveUpdateDestroyAPIView):
-#     queryset = Section.objects.all()
-#     serializer_class = SectionSerializer
-
 
 
 
