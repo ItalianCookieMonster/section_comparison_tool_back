@@ -32,6 +32,7 @@ class BlockSerializer(serializers.ModelSerializer):
     class Meta:
         model = Block
         fields = [
+            'id',
             'name',
             'vol_per_block',
             'width',
