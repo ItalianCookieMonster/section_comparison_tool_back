@@ -15,3 +15,4 @@ class UserSerializer(BaseUserSerializer):
         model = User
         fields = ['id', 'username', 'email', 'full_name', 'verified']
         
+        
