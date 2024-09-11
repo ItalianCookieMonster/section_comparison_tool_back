@@ -29,17 +29,19 @@ class ProjectSerializer(serializers.ModelSerializer):
 
 
 class BlockSerializer(serializers.ModelSerializer):
-    model = Block
-    fields = [
-        'name',
-        'vol_per_block',
-        'width',
-        'height',
-        'depth',
-        'face_area',
-        'image'
-    ]
-        
+    class Meta:
+        model = Block
+        fields = [
+            'id',
+            'name',
+            'vol_per_block',
+            'width',
+            'height',
+            'depth',
+            'face_area',
+            'image'
+        ]
+            
 
 
 class SectionSerializer(serializers.ModelSerializer):
