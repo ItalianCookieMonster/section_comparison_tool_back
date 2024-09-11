@@ -13,5 +13,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path(f'{API_URL}{VERSION}auth/', include('djoser.urls')),
     path(f'{API_URL}{VERSION}auth/', include('djoser.urls.jwt')),
+
     path(f'{API_URL}{VERSION}accounts/', include('accounts.urls')),
 ]
