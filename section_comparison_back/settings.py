@@ -31,7 +31,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# Application definition
 
 INSTALLED_APPS = [
     'corsheaders',
@@ -44,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'djoser',
     'accounts',
+    'projects',
     'core'
 ]
 
