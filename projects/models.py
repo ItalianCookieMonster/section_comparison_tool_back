@@ -6,6 +6,7 @@ class Project(models.Model):
     title = models.CharField(max_length=255)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT, null=True, blank=True) 
     company_name = models.CharField(max_length=255, blank=True, null=True)
+    contact = models.CharField(max_length=255, blank=True, null=True)
     concrete_density = models.FloatField(blank=True, null=True)
     currency = models.CharField(max_length=255, default="USD", blank=True, null=True)
     concrete_cost = models.DecimalField(blank=True, null=True, max_digits=8, decimal_places=2)
@@ -53,7 +54,7 @@ class Block(models.Model):
     height = models.FloatField()
     depth = models.FloatField()
     face_area = models.FloatField()
-    image = models.CharField(max_length=255)
+    image = models.CharField(max_length=255, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
