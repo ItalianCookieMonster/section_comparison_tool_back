@@ -15,4 +15,5 @@ urlpatterns = [
     path(f'{API_URL}{VERSION}auth/', include('djoser.urls.jwt')),
 
     path(f'{API_URL}{VERSION}accounts/', include('accounts.urls')),
+    path(f'{API_URL}{VERSION}', include('projects.urls')),
 ]
