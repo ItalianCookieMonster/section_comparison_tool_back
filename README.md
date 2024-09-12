@@ -110,10 +110,10 @@ pytest --cov=.
 
 ## Useful Links
 
-- [Database Schema]((https://drawsql.app/teams/valentina-5/diagrams/section-comparison-tool)) 
+- [Database Schema](https://drawsql.app/teams/valentina-5/diagrams/section-comparison-tool) 
 - [Figma Design](https://www.figma.com/design/mV7H0yoqPbrsKBMeVzv3vH/Wireframe-BlockCalculator?node-id=23-6674&t=ZMFFcyeQMrXhfIZ9-1) 
 - [Flowchart](https://drive.google.com/file/d/15my32Zdf100SE88YOFgBbZMQrayNrGWT/view?usp=sharing)
 
 ## Contact
 
-For inquiries, reach out via [LinkedIn]([https://linkedin.com/in/your-linkedin-profile](https://www.linkedin.com/in/valentinatoni/)).
+For inquiries, reach out via [LinkedIn](https://linkedin.com/in/your-linkedin-profile](https://www.linkedin.com/in/valentinatoni/ ).
