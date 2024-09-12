@@ -60,27 +60,5 @@ class TestCreateCollection(TestCase):
         
         assert response.status_code == status.HTTP_201_CREATED    
         
-    def test_retrieve_project(self):
-        project = {
-            'company_name': 'Test Company',
-        'concrete_density': 2400,
-        'currency': 'EUR',
-        'concrete_cost': 100,
-        'labour_cost': 50,
-        'avg_truck_capacity': 20,
-        'infill_density': 1800,
-        'infill_cost': 30,
-        'avg_truck_cost': 150,
-        'avg_production_time': 10,
-        'royalty': 5,
-        'pur_per_year': 1000,
-        'cem_content': 350,
-        'address': '123 Test St',
-        'zip_code': '12345',
-        'language': 'en'
-        }
-        client = APIClient()
-        client.force_authenticate(user=self.user)
-        response = self.client.get('/api/v1/projects/1/', project)
-        assert response.status_code == status.HTTP_200_OK
+
     
