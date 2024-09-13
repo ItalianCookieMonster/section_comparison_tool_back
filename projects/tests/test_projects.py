@@ -6,7 +6,7 @@ from django.test import TestCase
 import pytest
 
 @pytest.mark.django_db
-class TestCreateCollection(TestCase):
+class TestCreateProject(TestCase):
     def setUp(self):
         self.client = APIClient()
         self.user = get_user_model().objects.create_user(

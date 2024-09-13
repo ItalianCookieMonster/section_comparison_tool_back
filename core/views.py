@@ -17,7 +17,7 @@
 #                 'access': str(refresh.access_token),
 #             }
 
-#             # Aggiungi i token alla risposta
+#     
 #             return Response({
 #                 'user': response.data,
 #                 'tokens': tokens
