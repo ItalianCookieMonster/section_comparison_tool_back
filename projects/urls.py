@@ -8,5 +8,8 @@ router.register('blocks', views.BlockViewSet)
 router.register('sections', views.SectionViewSet)
 
 
-urlpatterns = router.urls
+urlpatterns = [
+    path('admin/projects/', views.AllProjectsView.as_view(), name='all-projects'),
+    path('projects/<int:pk>/sections/', views.SectionViewSet.as_view({'get': 'get_project_sections'}), name='project-sections'),
+] + router.urls
 
