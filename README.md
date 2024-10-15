@@ -59,10 +59,12 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory and add the following variables:
 
 ```
-SECRET_KEY=your-secret-key
-DEBUG=True
-ALLOWED_HOSTS=localhost, 127.0.0.1
-DATABASE_URL=postgres://username:password@localhost:5432/your-db-name
+ENGINE =django.db.backends.postgresql_psycopg2
+DB_HOST=
+DB_PORT=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
 ```
 
 ### 5. Database Setup
@@ -87,10 +89,10 @@ The server will be available at `http://127.0.0.1:8000/`.
 ## API Documentation
 
 API endpoints are structured as follows:
-- **/api/auth/**: Authentication-related endpoints (login, registration, password reset)
-- **/api/projects/**: CRUD operations for projects
-- **/api/blocks/**: Block data and comparisons
-- **/api/reports/**: Report generation for projects
+- **/api/v1/auth/**: Authentication-related endpoints (login, registration, password reset)
+- **/api/v1//projects/**: CRUD operations for projects
+- **/api/v1/blocks/**: Block data and comparisons
+-**/api/v1/section-block/**: Metrics calculations
 
 More detailed API documentation can be found in the project’s Postman collection or Swagger documentation (coming soon).
 
